@@ -1,4 +1,4 @@
-import os
+import os         #file in directory
 import socket
 import threading
 from time import sleep
@@ -25,8 +25,6 @@ class WirelessDegug():
 		self.MainFrame.create_window(125,375,window=self.More)
 		self.DisconnectBtn=Button(self.MainFrame,text="start server",command=self.startServer,border=1,bg="#19faa4",relief="ridge",width=20)
 		self.MainFrame.create_window(125,130,window=self.DisconnectBtn)
-				
-		
 		self.root.mainloop()
 	def startServer(self):
 		self.label=self.MainFrame.create_text(125,50,text="IP Address:",font=("Arial",10,"bold"))
